@@ -31,3 +31,7 @@ $plugin->dependencies = array(
 );
 $plugin->release = '2.0 Drag and drop matching question for Moodle 3.6, 3.7, 3.8';
 $plugin->maturity  = MATURITY_STABLE;
+
+function test_code_climate_rules_can_i_trigger_a_bad_climate_reaction() {
+    $a_very_very_very_very_very_very_very_very_very_long_variable = 99;
+}
