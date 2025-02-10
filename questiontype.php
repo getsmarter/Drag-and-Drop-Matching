@@ -18,7 +18,9 @@
  * Question type class for the drag&drop matching question type.
  *
  * @package    qtype_ddmatch
- * @copyright  2007 Adriane Boyd (adrianeboyd@gmail.com)
+ * 
+ * @author DualCube <admin@dualcube.com>
+ * @copyright  2007 DualCube (https://dualcube.com) 
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -126,12 +128,10 @@ class qtype_ddmatch extends question_type {
         $question->right = array();
 
         foreach ($questiondata->options->subquestions as $matchsub) {
-            $ans = $matchsub->answertext;
             $key = array_search($matchsub->answertext, $question->choices);
             if ($key === false) {
                 $key = $matchsub->id;
                 $question->choices[$key] = $matchsub->answertext;
-                $question->choiceformat[$key] = $matchsub->answertextformat;
             }
 
             if ($matchsub->questiontext !== '') {

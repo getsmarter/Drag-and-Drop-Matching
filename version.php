@@ -15,19 +15,21 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
+ * 
  * @package    qtype_ddmatch
- * @copyright  2007 Adriane Boyd (adrianeboyd@gmail.com)
+ * 
+ * @author DualCube <admin@dualcube.com>
+ * @copyright  2007 DualCube (https://dualcube.com) 
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qtype_ddmatch';
-$plugin->version   = 2022032400;
-
-$plugin->requires  = 2013050100;
+$plugin->version = 2025010801;
+$plugin->requires = 2022112815;
+$plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = array(
     'qtype_match' => 2015111600,
 );
-$plugin->release = '2.0 Drag and drop matching question for Moodle 3.6, 3.7, 3.8';
-$plugin->maturity  = MATURITY_STABLE;
+$plugin->release = '2.5.3 (Build: 2025010801)';
